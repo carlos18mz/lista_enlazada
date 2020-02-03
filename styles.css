@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+
+body{
+    
+    background-image: url("img/dark_blue.jpg");
+    background-attachment: fixed;
+    width:100%;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(14, 22, 40,0.5);
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+li
+{
+    list-style-type: none;
+    padding:20px;
+}
+
+.sup_bar{
+  display: inline;
+}
+table td{
+  text-align:left;
+  margin: 4px 50px;
+  /*border:1px solid;*/
+}
+
+nav{
+  width: fit-content;
+}
+
+.container{
+
+    position: absolute;
+    margin-left: 100px;
+    background-attachment: fixed;
+
+}
+
+.container2{
+    position:absolute;
+    margin-left: 100px;
+    background-attachment: fixed;
+
+}
+
+div{
+  margin:0;
+  padding: 0;
+}
+
+.SR,.SG{
+   
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #eee;
+    margin: 0 30px;
+    transition: all .8s ease;
+    position:absolute;
+    left:100px;
+    margin:10px;
+}
+
+.SR{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0px 0  0 0px #EE6565,
+    0px 0  0 0px #D5BA6E;
+    background: linear-gradient(to right,#D5BA6E, #EE6565);
+
+}
+
+
+.SR:hover{
+    box-shadow: 0px 0  50px .1px rgb(180, 115, 41),
+    0px 0  20px .5px #EE6565;
+    -moz-box-shadow: 0px 0px 5px #1e1e1e;        
+}
+
+.SG{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(to right,#34EBF2, #5A50E3);
+    box-shadow: 0px 0  0px 0px #5A50E3,
+                0px 0  0px 0px #34EBF2;
+
+}
+
+.SG:hover{
+    box-shadow: 0px 0  100px .5px rgb(43, 41, 180),
+    0px 0  20px .5px #34EBF2;
+}
+
+.SR:hover, .SG:hover{
+    transform: scale(1.3);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+}
+
+.IPbutton{
+    padding: 10px 20px;
+    background: rgba(255,255,255,.04);
+    border: none;
+    color: #eee;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.IPbutton.focus{
+    outline:none;
+    background: rgba(255,255,255,.09);
+}
+
+.Sbutton{
+    background: rgba(89, 180, 123, 1);
+    border: none;
+    cursor: pointer;
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    padding:10px;
+}
+
+t1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0.8px 1px #000000;
+}
+
+t2{
+    color: rgba(255, 255, 255, 1);
+}
+
+t3{
+  font-size: 15px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  color:rgba(255, 255, 255, 1);
+  position: relative;
+  text-shadow:1px 1px rgba(14, 22, 40,0.5);
+  padding: 0.5em 0.5em;
+  transition: all .4s ease;
+}
+
+t3:hover{
+    transform: scale(1.3);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+
+    box-shadow: inset 0px 0  50px .1px rgba(55, 9, 35,0.3),
+     0px 0  20px 15px rgb(55, 9, 35), /*out*/
+     inset 0px 10px  10px 10px rgb(55, 9, 35); /*in*/
+
+}
+
+.subs{
+  stroke: rgb(255,0,0);
+  stroke-width:2;
+}
+
+.subsline{
+  height: 500;
+  width: 500;
+}
+
+.cv{
+
+  margin-top: 0px;
+}
+
+
+@-webkit-keyframes jackInTheBox {
+    from {
+      opacity: 0;
+      -webkit-transform: scale(0.1) rotate(30deg);
+      transform: scale(0.1) rotate(30deg);
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom;
+    }
+  
+    50% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+  
+    70% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  @keyframes jackInTheBox {
+    from {
+      opacity: 0;
+      -webkit-transform: scale(0.1) rotate(30deg);
+      transform: scale(0.1) rotate(30deg);
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom;
+    }
+  
+    50% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+  
+    70% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
